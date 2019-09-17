@@ -1,3 +1,12 @@
+#include <iostream>
+
 int main(void)
 
-{ return 0;}
+{ 
+double x = 0.0;
+
+std::cout << "Escribe un numero" << std::endl;
+std::cin >> x  ;
+std::cout << "Hola, he leido: " << x << std::endl ;
+return 0;}
+
