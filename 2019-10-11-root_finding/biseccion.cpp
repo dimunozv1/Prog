@@ -21,10 +21,11 @@ int main(void)
 
 double biseccion (double xl, double xu, double eps, fptr fun)
 {
-  for(fun(xl)*fun(xu) < 0;
+  double xr;
+  while(fun(xl)*fun(xu) < 0)
     {
-    double xr = (xl + xu)/2;
-    if(std::fabs(f(xr)) <= eps){
+     xr = (xl + xu)/2;
+    if(std::fabs(fun(xr)) <= eps){
       
       break ;
     }
